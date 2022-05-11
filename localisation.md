@@ -1,8 +1,10 @@
 # Localisation
 
+The process of the robot determining its location.
+
 ## Dead Reckoning
 
-## Map-Based Localisation
+## Surveying
 
 ![trilateration-triangulation](images/trilateration-triangulation.drawio.svg)
 
@@ -24,4 +26,8 @@ $$
 
 > The more landmarks, the more accurate the trilateration and triangulation.
 
-## SLAM
+## Markov Localisation
+
+## Particle Filter Localisation
+
+## Kalman Filter Localisation

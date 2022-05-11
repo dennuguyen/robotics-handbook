@@ -30,3 +30,18 @@ IMUs consist of:
 $$ $$
 
 ## Motor Encoders
+
+## Computer Vision
+
+### Feature Detection
+
+- Edge Detection
+- Hough Transform
+- Contour Detection
+- Corner Detection
+- Edge Detection
+- SIFT
+- SURF
+- ORB
+- Marker Detection
+- Face Detection

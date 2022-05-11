@@ -94,3 +94,9 @@ $$
 $$
 
 - $\dot{c}(t)$ is the dynamics of error.
+
+## Open-Loop Control
+
+## Bang-Bang Control
+
+## PID Control
