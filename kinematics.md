@@ -1,4 +1,6 @@
-# UGV 2D Kinematics
+# Kinematics
+
+## UGV 2D Kinematics
 
 The states of the UGV are the global cartesian coordinates and heading w.r.t the x-axis counter-clockwise:
 $$
@@ -35,9 +37,9 @@ $$
     \right)
 $$
 
-## Ackermann
+### Ackermann
 
-![ackermann-model](ackermann-model.drawio.svg)
+![ackermann-model](images/ackermann-model.drawio.svg)
 
 The inputs to the Ackermann model is:
 $$
@@ -68,9 +70,9 @@ $$
     \right)
 $$
 
-## Two-Wheel Differential
+### Two-Wheel Differential
 
-![two-wheel-differential-model](two-wheel-differential-model.drawio.svg)
+![two-wheel-differential-model](images/two-wheel-differential-model.drawio.svg)
 
 The inputs to the differential model is:
 $$
@@ -101,3 +103,7 @@ $$
         \end{matrix}
     \right)
 $$
+
+## Forward Kinematics
+
+## Inverse Kinematics

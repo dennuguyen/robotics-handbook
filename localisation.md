@@ -1,8 +1,10 @@
 # Localisation
 
+## Dead Reckoning
+
 ## Map-Based Localisation
 
-![trilateration-triangulation](trilateration-triangulation.drawio.svg)
+![trilateration-triangulation](images/trilateration-triangulation.drawio.svg)
 
 ### Trilateration
 
@@ -21,3 +23,5 @@ $$
 $$
 
 > The more landmarks, the more accurate the trilateration and triangulation.
+
+## SLAM

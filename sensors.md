@@ -2,7 +2,7 @@
 
 ## 2D LiDAR
 
-![2d-lidar](2d-lidar.drawio.svg)
+![2d-lidar](images/2d-lidar.drawio.svg)
 
 $$T = cD$$
 
@@ -28,3 +28,5 @@ IMUs consist of:
 - Gyroscope ( $\vec{\omega}$ ):
 
 $$ $$
+
+## Motor Encoders
