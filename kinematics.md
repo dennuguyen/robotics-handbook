@@ -89,7 +89,7 @@ $$
 
 The angular velocity is:
 $$
-\omega(t) = \frac{R_{wheel}}{L}\left(\omega_{R}(t) - \omega_{L}(t) \right)
+\omega(t) = \frac{R_{wheel}}{2L}\left(\omega_{R}(t) - \omega_{L}(t) \right)
 $$
 
 The change in states over time is therefore:
@@ -99,7 +99,7 @@ $$
         \begin{matrix}
             \frac{R_{wheel}}{2}\left(\omega_{L}(t) + \omega_{R}(t)\right) \cdot \cos\left(\phi(t)\right) \\
             \frac{R_{wheel}}{2}\left(\omega_{L}(t) + \omega_{R}(t)\right) \cdot \sin\left(\phi(t)\right) \\
-            \frac{R_{wheel}}{L}\left(\omega_{R}(t) - \omega_{L}(t) \right) \\
+            \frac{R_{wheel}}{2L}\left(\omega_{R}(t) - \omega_{L}(t) \right) \\
         \end{matrix}
     \right)
 $$
