@@ -23,3 +23,12 @@ The motor driver should have the right voltage and current handling capacity for
 ### On-State Resistance
 
 Prefer an IC with lower on-state resistance to minimise power dissipation.
+
+## L298N Motor Driver
+
+![l289n-pinout](images/l289n-pinout.png)
+
+This motor driver is the most common and basic motor driver available.
+- The motor driven is supplied by the 5 - 35 V and GND power pins.
+- Login and enable pins send PWM signals to drive motors A and B.
+- It also acts as a power supply with a 5 V power pin.
