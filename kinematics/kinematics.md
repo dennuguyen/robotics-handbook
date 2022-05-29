@@ -39,7 +39,7 @@ $$
 
 ### Ackermann
 
-![ackermann-model](images/ackermann-model.drawio.svg)
+![ackermann-model](ackermann-model.drawio.svg)
 
 The inputs to the Ackermann model is:
 $$
@@ -72,7 +72,7 @@ $$
 
 ### Two-Wheel Differential
 
-![two-wheel-differential-model](images/two-wheel-differential-model.drawio.svg)
+![two-wheel-differential-model](two-wheel-differential-model.drawio.svg)
 
 The inputs to the differential model is:
 $$

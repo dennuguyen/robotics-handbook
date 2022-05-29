@@ -6,7 +6,7 @@ The process of the robot determining its location.
 
 ## Surveying
 
-![trilateration-triangulation](images/trilateration-triangulation.drawio.svg)
+![trilateration-triangulation](trilateration-triangulation.drawio.svg)
 
 ### Trilateration
 

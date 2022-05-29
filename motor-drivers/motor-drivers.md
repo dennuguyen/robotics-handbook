@@ -26,7 +26,7 @@ Prefer an IC with lower on-state resistance to minimise power dissipation.
 
 ## L298N Motor Driver
 
-![l289n-pinout](images/l289n-pinout.png)
+![l289n-pinout](l289n-pinout.png)
 
 This motor driver is the most common and basic motor driver available.
 - The motor driven is supplied by the 5 - 35 V and GND power pins.
