@@ -50,18 +50,3 @@ a = \frac{T}{mr} - \mu g
 $$
 
 > Increasing the wheel radius will decrease the platform's net force.
-
-## Motor Selection
-
-A desired velocity and torque should be decided before selecting a motor.
-
-### Motor Type
-
-### Loads
-
-### Battery Life
-
-
-## Gear Train
-
-Gearing can be considered if the selection of motors is limited.
