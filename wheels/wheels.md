@@ -1,8 +1,22 @@
-# Drive System
+# Wheels
 
-## Wheel Configurations
+## Wheel Types
 
+### Standard Wheel
 
+![standard-wheel](standard-wheel.drawio.svg)
+
+### Castor Wheel
+
+![castor-wheel](castor-wheel.drawio.svg)
+
+### Mecanum Wheel
+
+![mecanum-wheel](mecanum-wheel.drawio.svg)
+
+### Ball Wheel
+
+![ball-wheel](ball-wheel.drawio.svg)
 
 ## Wheel Kinematics
 
