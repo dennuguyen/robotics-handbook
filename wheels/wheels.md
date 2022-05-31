@@ -36,7 +36,9 @@ $$
 
 ![acceleration](acceleration.drawio.svg)
 
-To figure out how much acceleration the platform should have from zero to top speed:
+We can design for acceleration of the wheel from zero to top speed.
+
+Using distance to accelerate, $s$, as the design constraint:
 $$
 a = \frac{v^2}{2s}
 $$
@@ -46,6 +48,11 @@ Where:
 - $s$ is the distance travelled while accelerating.
 
 > Decreasing the distance while accelerating will increase the vehicle's acceleration.
+
+Using time to accelerate, $t$, as the design constraint:
+$$
+a = \frac{v}{t}
+$$
 
 ### Design for Torque or Acceleration
 
@@ -59,6 +66,8 @@ F_{f} &= \mu N \\
 N &= mg
 \end{aligned}
 $$
+
+> Note that the mass is distributed per wheel and not total mass.
 
 So the net force is:
 $$
