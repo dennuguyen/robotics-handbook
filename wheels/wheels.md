@@ -54,37 +54,34 @@ $$
 a = \frac{v}{t}
 $$
 
-### Design for Torque or Acceleration
+### Design for Torque
 
 ![wheel-free-body-diagram](wheel-free-body-diagram.drawio.svg)
 
 To figure out how much torque is required to move the platform, consider the forces acting on the wheel:
 $$
 \begin{aligned}
-F_{T} &= \frac{T}{r} \\
+T &= r F_{f} \\
 F_{f} &= \mu N \\
 N &= mg
 \end{aligned}
 $$
 
+Therefore, the minimum torque required is:
+$$
+T = r\mu mg
+$$
+
 > Note that the mass is distributed per wheel and not total mass.
 
-So the net force is:
+### Design for Acceleration with Torque Constraint
+
+To get the acceleration as a function of torque:
+
 $$
 \begin{aligned}
-F_{net} &= F_{T} - F_{f} \\
-ma &= \frac{T}{r} - \mu mg
+\sum{F_{x}} &= F_{f} \\
+ma_{x} &= \frac{T}{r} \\
+a_{x} &= \frac{T}{mr}
 \end{aligned}
 $$
-
-To design for torque with an acceleration design constraint, the equation is rearranged as:
-$$
-T = mr(a + \mu g)
-$$
-
-To design for acceleration with a torque design constraint, the equation is rearranged as:
-$$
-a = \frac{T}{mr} - \mu g
-$$
-
-> Increasing the wheel radius will decrease the platform's net force.
