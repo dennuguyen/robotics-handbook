@@ -32,6 +32,21 @@ $$
 
 > Increasing the wheel radius will increase the platform's velocity for the same angular velocity.
 
+### Design for Acceleration with Kinematic Constraint
+
+![acceleration](acceleration.drawio.svg)
+
+To figure out how much acceleration the platform should have from zero to top speed:
+$$
+a = \frac{v^2}{2s}
+$$
+
+Where:
+- $v$ is the final velocity.
+- $s$ is the distance travelled while accelerating.
+
+> Decreasing the distance while accelerating will increase the vehicle's acceleration.
+
 ### Design for Torque or Acceleration
 
 ![wheel-free-body-diagram](wheel-free-body-diagram.drawio.svg)
