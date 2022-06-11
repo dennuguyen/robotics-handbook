@@ -52,7 +52,7 @@ $$
 
 The state covariance matrix can then be transformed between timesteps:
 $$
-X(k + 1 | k) = F_{x}(k + 1 | k) \cdot X(k | k) \cdot F_{x}(k + 1 | k) \text{ : transforming state covariance matrix}
+X(k + 1 | k) = F_{x}(k + 1 | k) \cdot X(k | k) \cdot F_{x}^{T}(k + 1 | k) \text{ : transforming state covariance matrix}
 $$
 
 ### Process Model Noise
@@ -80,7 +80,7 @@ Process model noise can come from multiple sources:
 
 The process model noise will affect the state vector and is additive with the state covariance matrix:
 $$
-X(k + 1 | k) = F_{x}(k + 1 | k) \cdot X(k | k) \cdot F_{x}(k + 1 | k)^{T} + W_{x}(k) \text{ : process model noise equation}
+X(k + 1 | k) = F_{x}(k + 1 | k) \cdot X(k | k) \cdot F_{x}^{T}(k + 1 | k) + W_{x}(k) \text{ : process model noise equation}
 $$
 
 ### Input Noise as a Process Model Noise
@@ -143,7 +143,7 @@ $$
 
 Since the observation model "projects" the state vector into the observation-space, the covariance matrix of the state vector needs to be transformed too. The covariance matrix of the state vector in observation space is:
 $$
-X_{\text{observation}}(k + 1) = H(k + 1) \cdot X_{\text{state}}(k + 1 | k) \cdot H(k + 1)^{T} \text{ : state covariance in observation space}
+X_{\text{observation}}(k + 1) = H(k + 1) \cdot X_{\text{state}}(k + 1 | k) \cdot H^{T}(k + 1) \text{ : state covariance in observation space}
 $$
 
 ### Observation Model Noise
@@ -186,7 +186,7 @@ $$
 
 The Kalman gain determines how much we need to correct our prediction of the states.
 $$
-K(k + 1) = X(k + 1 | k) \cdot H(k + 1)^{T} \cdot Y(k + 1)^{-1} \text{ : Kalman gain}
+K(k + 1) = X(k + 1 | k) \cdot H^{T}(k + 1) \cdot Y(k + 1)^{-1} \text{ : Kalman gain}
 $$
 
 With the Kalman gain, the updated state and covariance matrix of the state of the next step is:
@@ -216,15 +216,15 @@ $$
 
 x(k + 1 | k) &= f(x(k | k), u(k)) + w_{x}(k) &\text{ : predict next state}\\
 F(k + 1 | k) &= \left. \frac{\partial f}{\partial x} \right|_{\hat{x}(k | k), u(k)} &\text{ : calculate proces model Jacobian}\\
-X(k + 1 | k) &= F_{x}(k + 1 | k)\cdot X(k | k)\cdot F_{x}(k + 1 | k)^{T} + W_{x}(k) &\text{ : predict next state covariance}\\
+X(k + 1 | k) &= F_{x}(k + 1 | k)\cdot X(k | k)\cdot F_{x}^{T(k + 1 | k)} + W_{x}(k) &\text{ : predict next state covariance}\\
 \\
 
 \text{\bf{Update:}} \\
 \hat{z}(k + 1) &= h(X(k + 1 | k)) + w_{z}(k) &\text{ : measure observation} \\
 \hat{y}(k + 1) &= z(k + 1) - \hat{z}(k + 1) &\text{ : calculate innovation} \\
 H(k + 1 | k) &= \left. \frac{\partial h}{\partial x} \right|_{\hat{x}(k + 1 | k)} &\text{ : calculate observation model Jacobian} \\
-Y(k + 1) &= H(k + 1)X(k + 1 | k)H(k + 1)^{T} + W_{z}(k) &\text{ : calculate innovation covariance} \\
-K(k + 1) &= X(k + 1 | k) \cdot H(k + 1)^{T} \cdot Y(k + 1)^{-1} &\text{ : calculate Kalman gain}\\
+Y(k + 1) &= H(k + 1)X(k + 1 | k)H^{T}(k + 1) + W_{z}(k) &\text{ : calculate innovation covariance} \\
+K(k + 1) &= X(k + 1 | k) \cdot H^{T}(k + 1) \cdot Y(k + 1)^{-1} &\text{ : calculate Kalman gain}\\
 x(k + 1 | k + 1) &= x(k + 1 | k) + K(k + 1) \cdot \hat{y}(k + 1) &\text{ : update state vector} \\
 X(k + 1 | k + 1) &= (I - K(k + 1) \cdot H(k + 1)) \cdot X(k + 1 | k) &\text{ : update state covariance matrix} \\
 \\
