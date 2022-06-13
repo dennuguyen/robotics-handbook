@@ -124,6 +124,8 @@ $$
 z = \left(\begin{matrix} z_{1} \\ \vdots \\ z_{m} \end{matrix}\right) \text{ : truth observation vector}
 $$
 
+> The truth values are observed from sensors.
+
 ## Design the Observation Model
 
 The observation model, $h$, predicts the observation vector given a state vector.
