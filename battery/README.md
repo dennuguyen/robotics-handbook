@@ -8,9 +8,9 @@ C_{p} = I^{k}t
 $$
 
 Where:
-- $C_{p}$ is the capacity at one-ampere discharge rate ($Ah$).
-- $I$ is the actual discharge current ($A$).
-- $t$ is the time to discharge the battery ($h$).
+- $C_{p}$ is the capacity at one-ampere discharge rate $(Ah)$.
+- $I$ is the actual discharge current $(A)$.
+- $t$ is the time to discharge the battery $(h)$.
 - $k$ is the Peukert constant.
 
 If $C_{p}$ is not given then approximate the discharge rate with:
