@@ -37,3 +37,15 @@ Where:
 - $I$ is the current load $(A)$.
 
 > A battery is effectively discharged at 2/3 of its rated capacity.
+
+## Battery Capacity
+
+The battery capacity formula is:
+$$
+E = VQ
+$$
+
+Where:
+- $E$ is the battery energy $(Whr)$.
+- $V$ is the battery voltage $(V)$.
+- $Q$ is the battery capacity $(Ahr)$.
